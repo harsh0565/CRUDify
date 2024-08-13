@@ -1,0 +1,20 @@
+.heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 50px;
+    text-transform: capitalize;
+    background: linear-gradient(blue, red);
+    color: transparent;
+    background-clip: text;
+    font-weight: bolder;
+
+}
+
+body {
+    background-color: rgb(234, 238, 241);
+}
+
+button:hover {
+    border-radius: 50%;
+
+}
