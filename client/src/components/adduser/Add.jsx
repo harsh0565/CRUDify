@@ -21,7 +21,7 @@ const Add = () => {
 
     const submitForm = async (e) => {
         e.preventDefault();
-        await axios.post("http://localhost:8000/api/create", user).then((response) => {
+        await axios.post("https://crudify-backend.onrender.com/api/create", user).then((response) => {
             console.log(response);
             toast(response.data.msg);
             navigate("/");
