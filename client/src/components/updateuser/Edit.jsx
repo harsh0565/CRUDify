@@ -29,7 +29,7 @@ const Edit = () => {
     }
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/api/getOne/${id}`).then((response) => {
+        axios.get(`https://crudify-backend.onrender.com/api/getOne/${id}`).then((response) => {
             console.log(response);
             setUser(response.data);
         }).catch((error) => {
