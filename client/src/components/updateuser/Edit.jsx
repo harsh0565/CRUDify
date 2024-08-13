@@ -19,7 +19,7 @@ const Edit = () => {
 
     const submitForm = async (e) => {
         e.preventDefault();
-        await axios.put(`http://localhost:8000/api/update/${id}`, user).then((response) => {
+        await axios.put(`https://crudify-backend.onrender.com/api/update/${id}`, user).then((response) => {
             console.log(response);
             toast(response.data.msg);
             navigate("/");
