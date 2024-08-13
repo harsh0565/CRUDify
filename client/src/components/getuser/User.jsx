@@ -7,7 +7,7 @@ const User = () => {
     const [users, setUsers] = useState([]);
 
     const deleteUser = async (id) => {
-        await axios.delete(`http://localhost:8000/api/delete/${id}`).then((response) => {
+        await axios.delete(`https://crudify-backend.onrender.com/api/delete/${id}`).then((response) => {
             console.log(response);
             setUsers((prev) => prev.filter((user) => user._id !== id));
             toast.success(response.data.msg);
